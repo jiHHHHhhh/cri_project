@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <p>투팍</p>
   </React.StrictMode>,
   document.getElementById('root')
 );

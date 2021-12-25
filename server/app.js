@@ -8,3 +8,8 @@ app.listen(3001, () =>{
 app.get('/', (req, res) => {
     res.send("glgl");
 });
+
+
+app.get('/', (req, res) => {
+    res.send("glgl");
+});
