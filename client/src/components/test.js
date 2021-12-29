@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-class King extends Component {
+class Test extends Component {
 
     render() {
 
         return (
             <div>
-                안녕! 너는 프롭이니?! <b>{this.props.name}</b>
+                안녕! 너는 프롭이니?!
             </div>
         );
 
@@ -14,4 +14,4 @@ class King extends Component {
 
 }
 
-export default King;
+export default Test;

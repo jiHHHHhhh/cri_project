@@ -1,4 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
+import axios from 'axios';
+
+
 
 class Header extends Component {
 
@@ -12,6 +15,7 @@ class Header extends Component {
 
   render() {
     const { count } = this.state;		// state 조회
+    
       return (
         <div>
           <p>You clicked {count} times</p>
@@ -22,6 +26,7 @@ class Header extends Component {
           }}>
             Click me
           </button>
+          
         </div>
       );
     }

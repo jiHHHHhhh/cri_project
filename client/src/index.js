@@ -1,18 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './App'
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Header from './components/header';
 import Footer from './components/footer';
-import King from './components/test'
+import Test from './components/test'
+import axios from 'axios';
+import App from './App';
 
 
 ReactDOM.render(
   <React.StrictMode>
     <Header/>
-    <King name="리액트" />
+    <BrowserRouter>
+    <App/>
+    <Routes>
+      <Route path="/test" element={<Test />} />
+    </Routes>
+    </BrowserRouter>
     <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
